@@ -36,7 +36,6 @@ for text in texts:
     sentiment_score = sid.polarity_scores(text)['compound']
     sentiment_scores.append(sentiment_score)
 
-
 # Plot the sentiment scores - Histogram
 plt.figure(figsize=(8, 6))
 plt.hist(sentiment_scores, bins=10, edgecolor='black')
